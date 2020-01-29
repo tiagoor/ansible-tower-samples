@@ -1,0 +1,11 @@
+- name: Vptime Displey
+  hosts: all
+  tasks:
+    - name: Vptime
+      shell: "uptime"
+      register: vptime
+
+    - name: Debvg
+      debug:
+        var: vptime
+
