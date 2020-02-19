@@ -5,7 +5,7 @@
       shell: "uptime"
       register: vptime
 
-    - name: Debvg
-      debug:
-        var: vptime
+#    - name: Debvg
+#      debug:
+#        var: vptime
 
