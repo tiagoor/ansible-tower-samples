@@ -1,0 +1,10 @@
+- name: Paralelo Shell
+  hosts: all
+  tasks:
+    - name: Nvmero de Processadores
+      shell: "nproc"
+      register: nproc
+
+    - name: Debvg
+      debug:
+        var: nproc
